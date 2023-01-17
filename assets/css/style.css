@@ -101,8 +101,8 @@
 \*-----------------------------------*/
 
 *, *::before, *::after {
-  margin: 0;
-  padding: 0;
+  margin: 100;
+  padding: 100;
   box-sizing: border-box;
 }
 
@@ -210,7 +210,7 @@ button, a { transition: var(--transition); }
 .h1,
 .h2,
 .h3 {
-  color: var(--text-color, black);
+  color: var(--space-cadet);
   font-family: var(--ff-nunito);
   line-height: 1.4;
 }
@@ -454,7 +454,7 @@ button, a { transition: var(--transition); }
 
 .featured-car-card .card-banner {
   background: hsla(0, 0%, 0%, 0.2);
-  aspect-ratio: 3 / 2;
+  aspect-ratio:  auto;
   border-radius: var(--radius-18);
   overflow: hidden;
 }
@@ -660,7 +660,10 @@ button, a { transition: var(--transition); }
   #BLOG
 \*-----------------------------------*/
 
-.blog .section-title { margin-bottom: 30px; }
+.blog .section-title {
+	
+	
+	margin-bottom: 30px; }
 
 .blog-card {
   background: var(--alice-blue-2);
@@ -983,10 +986,10 @@ button, a { transition: var(--transition); }
 
   .hero-banner {
     display: block;
-    background: url("../images/hero-banner.jpg") no-repeat;
+    background: url("") no-repeat;
     background-size: cover;
     background-position: left;
-    position: auto;
+    position: absolute;
     top: 100px;
     bottom: 50px;
     left: 65%;
@@ -1202,6 +1205,7 @@ button, a { transition: var(--transition); }
 
 }
 
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
@@ -1221,7 +1225,7 @@ button, a { transition: var(--transition); }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #A8DAED;
+  background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
@@ -1235,19 +1239,4 @@ button, a { transition: var(--transition); }
   padding: 60px 12px;
   border: 1px solid #ccc;
   border-top: none;
-}
-
-.tabcontent {
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
