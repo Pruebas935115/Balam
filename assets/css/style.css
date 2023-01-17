@@ -101,8 +101,8 @@
 \*-----------------------------------*/
 
 *, *::before, *::after {
-  margin: 100;
-  padding: 100;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -454,7 +454,7 @@ button, a { transition: var(--transition); }
 
 .featured-car-card .card-banner {
   background: hsla(0, 0%, 0%, 0.2);
-  aspect-ratio:  auto;
+  aspect-ratio: 3 / 2;
   border-radius: var(--radius-18);
   overflow: hidden;
 }
@@ -660,10 +660,7 @@ button, a { transition: var(--transition); }
   #BLOG
 \*-----------------------------------*/
 
-.blog .section-title {
-	
-	
-	margin-bottom: 30px; }
+.blog .section-title { margin-bottom: 30px; }
 
 .blog-card {
   background: var(--alice-blue-2);
@@ -986,7 +983,7 @@ button, a { transition: var(--transition); }
 
   .hero-banner {
     display: block;
-    background: url("") no-repeat;
+    
     background-size: cover;
     background-position: left;
     position: absolute;
