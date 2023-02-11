@@ -4,6 +4,36 @@
  * navbar toggle
  */
 
+document.getElementById("prices-link").addEventListener("click", function(event) {
+  event.preventDefault();
+  showMessage();
+});
+
+function showMessage() {
+  var messageContainer = document.createElement("div");
+  messageContainer.classList.add("message-container");
+  var message = document.createTextNode("Los precios varían y dependen del tipo y modelo que estés buscando. Envíanos un mensaje en cualquiera de los apartados dentro de la página y con mucho gusto te ayudaremos!");
+  messageContainer.appendChild(message);
+  document.body.appendChild(messageContainer);
+  messageContainer.style.display = "block"; // muestra el mensaje
+  setTimeout(function() {
+    document.body.removeChild(messageContainer);
+  }, 5000);
+}
+
+
+
+const welcomeMessage = document.getElementById("welcome-message");
+
+window.onload = function() {
+	welcomeMessage.classList.add("show");
+
+	setTimeout(function() {
+		welcomeMessage.classList.remove("show");
+	}, 3000); // 3000 ms = 3 segundos
+}
+
+
 const overlay = document.querySelector("[data-overlay]");
 const navbar = document.querySelector("[data-navbar]");
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
